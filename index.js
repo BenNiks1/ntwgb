@@ -1,7 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api");
 
-const token = "5853943922:AAEu1ZhEfWnx5cvVyRZWsVfWBEjik4j-UVQ";
-const webUrl = "https://twa.katokdoes.art/";
+const token = TELEGRAM_BOT_TOKEN;
+const webUrl = FRONTEND_URL;
 
 const bot = new TelegramBot(token, { polling: true });
 bot.on("message", async (msg) => {
